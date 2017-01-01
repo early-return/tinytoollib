@@ -9,7 +9,7 @@ public class JavInfo {
     private String code;
     private String title;
     private String coverUrl;
-    private Date publishDate;
+    private String publishDate;
     private String length;
     private String publisher;
     private String producer;
@@ -48,11 +48,11 @@ public class JavInfo {
         this.coverUrl = coverUrl;
     }
 
-    public Date getPublishDate() {
+    public String getPublishDate() {
         return publishDate;
     }
 
-    public void setPublishDate(Date publishDate) {
+    public void setPublishDate(String publishDate) {
         this.publishDate = publishDate;
     }
 

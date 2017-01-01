@@ -7,8 +7,8 @@ import java.util.Date;
  */
 public class JavMagnet {
     private String url;
-    private long size;
-    private Date date;
+    private String size;
+    private String date;
 
     public JavMagnet() {
 
@@ -16,7 +16,7 @@ public class JavMagnet {
     public JavMagnet(String url) {
         this.url = url;
     }
-    public JavMagnet(String url, long size, Date date) {
+    public JavMagnet(String url, String size, String date) {
         this.url = url;
         this.size = size;
         this.date = date;
@@ -30,19 +30,19 @@ public class JavMagnet {
         this.url = url;
     }
 
-    public long getSize() {
+    public String getSize() {
         return size;
     }
 
-    public void setSize(long size) {
+    public void setSize(String size) {
         this.size = size;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 }

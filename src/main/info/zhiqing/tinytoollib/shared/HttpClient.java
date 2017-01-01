@@ -24,8 +24,10 @@ public class HttpClient {
         if(cookie != null && !cookie.equals("")) {
             builder.header("Cookie", cookie);
         }
-        for (Map.Entry<String, String> entry : headers.entrySet()) {
-            builder.addHeader(entry.getKey(), entry.getValue());
+        if(headers != null) {
+            for (Map.Entry<String, String> entry : headers.entrySet()) {
+                builder.addHeader(entry.getKey(), entry.getValue());
+            }
         }
         Request request = builder.build();
 
